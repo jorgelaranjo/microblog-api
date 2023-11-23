@@ -41,7 +41,7 @@ environment variables that are currently used:
 | `ACCESS_TOKEN_MINUTES` | `15` | The number of minutes an access token is valid for. |
 | `REFRESH_TOKEN_DAYS` | `7` | The number of days a refresh token is valid for. |
 | `REFRESH_TOKEN_IN_COOKIE` | `yes` | Whether to return the refresh token in a secure cookie. |
-| `REFRESH_TOKEN_IN_BODY' | `no` | Whether to return the refresh token in the response body. |
+| `REFRESH_TOKEN_IN_BODY` | `no` | Whether to return the refresh token in the response body. |
 | `RESET_TOKEN_MINUTES` | `15` | The number of minutes a reset token is valid for. |
 | `PASSWORD_RESET_URL` | `http://localhost:3000/reset` | The URL that will be used in password reset links. |
 | `USE_CORS` | `yes` | Whether to allow cross-origin requests. If allowed, CORS support can be configured or customized with options provided by the Flask-CORS extension. |
@@ -52,6 +52,11 @@ environment variables that are currently used:
 | `MAIL_USERNAME` | not defined | The username to use for sending emails. |
 | `MAIL_PASSWORD` | not defined | The password to use for sending emails. |
 | `MAIL_DEFAULT_SENDER` | `donotreply@microblog.example.com` | The default sender to use for emails. |
+| `GITHUB_CLIENT_ID` | not defined | The client ID for the GitHub OAuth2 application, used for logging in with a GitHub account. |
+| `GITHUB_CLIENT_SECRET` | not defined | The client secret for the GitHub OAuth2 application, used for logging in with a GitHub account. |
+| `GOOGLE_CLIENT_ID` | not defined | The client ID for the Google OAuth2 application, used for logging in with a Google account. |
+| `GOOGLE_CLIENT_SECRET` | not defined | The client secret for the Google OAuth2 application, used for logging in with a Google account. |
+| `OAUTH2_REDIRECT_URI` | `http://localhost:3000/oauth2/{provider}/callback` | The redirect URI to use for OAuth2 logins. A `{provider}` placeholder can be used to have the provider name inserted dynamically. |
 
 ## Authentication
 
